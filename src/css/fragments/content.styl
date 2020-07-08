@@ -1,0 +1,55 @@
+#content
+    max-width 40em
+    width 85%
+    margin 0 auto
+    font-size 1.1rem
+
+.gallery
+    display grid
+    width 100%
+    gap 10px 10px
+    img
+        object-fit cover
+        height 100%
+        width 100%
+
+#gallery-1
+    height 80vh
+    grid-template "big sm2" 20% "big sm3" 20% "big sm4" 20% "sm1 sm1" 35% / 2fr 1fr
+    +mq('bp-4')
+        height 60vh
+        grid-template "big sm1 sm1 sm1" 70% "big sm2 sm3 sm4" 30% / 2.5fr 1fr 1fr 1fr
+
+#gallery-2
+    height 80vh
+    grid-template "big big" 60% "sm1 sm2" 40% / 1fr 1.5fr
+
+.content-image-caption
+    color $secondaryCol
+    font-size 0.8rem
+    text-align center
+    margin-top 0
+
+.content-image-container
+    height 50vh
+    position: relative
+    overflow-x:hidden
+    overflow-y:hidden
+    img
+        position relative
+        top 5%
+        left 5%
+        height 90%
+        width 90%
+        object-fit cover
+        z-index 1
+        overflow hidden
+
+.sized
+    font-size: 20px!important;
+    padding-top:4px;
+    vertical-align: bottom;
+.orange
+    color: #FB8C00;
+
+

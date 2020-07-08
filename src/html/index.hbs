@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang='en' data-version='{{timestamp}}'>
+<head>
+	{{> base/meta }}
+	<title>{{copy.title}}</title>
+	{{!-- typekit --}}
+	<link rel="stylesheet" href="https://use.typekit.net/ydg1uws.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/glide.core.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/glide.theme.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/lg.min.css">
+		<link rel='stylesheet' type="text/css" href='style.css' />
+	<script src="./assets/scripts/d3.v5.min.js"></script>
+	<script>
+		window.twttr = (function(d, s, id) {
+  			var js, fjs = d.getElementsByTagName(s)[0],t = window.twttr || {};if (d.getElementById(id)) return t;js = d.createElement(s);js.id = id;js.src = "https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};
+  			return t;
+		}(document, "script", "twitter-wjs"));
+	</script>
+	
+	<script async src="index.js" type="text/javascript" ></script>
+</head>
+
+<body>
+	{{> base/navbar }}
+	{{> story/intro }}
+	{{> story/intro }}
+	{{> story/workcards }}
+	{{> story/contact }}
+</body>
+
+</html> 
